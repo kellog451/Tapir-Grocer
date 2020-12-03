@@ -1,0 +1,306 @@
+body {
+	background: url(https://images.unsplash.com/photo-1542838132-92c53300491e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JvY2VyaWVzfGVufDB8fDB8&ixlib=rb-1.2.1);
+	background-size: cover;
+	background-position: center;
+	font-family: Lato;
+	font-size:;
+	color: white;
+	
+}
+#content {
+	text-align: center;
+	padding: 25px;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#logo{
+	padding-right: 5px;
+	color: #E89127;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+
+html {
+	height: 100%;
+}
+
+hr {
+	width: 700px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#center_container{
+    width:80%;
+    margin: auto;
+    background-color: #ccc;
+		border-radius: 4px;
+}
+
+/*-- form styling --------*/
+
+#content form{
+    width:90%;
+    margin: 40px auto;
+    border: solid 1px black;
+    background-color: white;
+    padding:25px;
+		border-radius: 4px;
+}
+
+form h2{
+    padding-bottom: 30px;
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+	position: relative;
+}
+
+.inputbox{
+	width:100%;
+	text-align: left;
+	margin: 10px 0px;
+}
+
+.inputbox input{
+	width:2%;
+}
+
+.inputbox span{
+	margin-left: 10px;
+	text-shadow: none;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 60px;
+  text-align: center;
+}
+
+/*--password eye----*/
+.eyeshow{
+	position: absolute;
+	right: 0;
+	text-shadow: none;
+	padding: 12px;
+}
+
+.eyeshow:hover{
+	cursor: pointer;
+}
+
+/*--bootstrap alerts----*/
+.alert{
+	text-shadow: none;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: solid 2px #ccc;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/*-- qr code styling ---*/
+.qr-btn {
+	background-color:#8c52ff;
+	padding:8px;
+	color:white;
+	cursor:pointer;
+}
+
+#link_form{
+	width:90%;
+	margin: 40px auto;
+	border: solid 1px black;
+	background-color: white;
+	padding:25px;
+	border-radius: 4px;
+	text-align: center;
+	text-shadow: none;
+}
+
+#link_form .input-container{
+	width: 50%;
+	margin:20px auto;
+}
+
+#link_form .input-container i{
+	padding-top:15px;
+}
+
+#link_form .btn{
+	width: 50%;
+	margin:20px auto;
+}
+
+#link_form .input-container input{
+	width: 100%;
+  padding: 10px;
+  outline: none;
+  border: solid 2px #ccc;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.canvas_container{
+	width:100%;
+}
+
+canvas{
+	padding:15px;
+}
+
+#downloadbtn{
+	display: none;
+	padding:10px;
+}
+
+#downloadbtn i{
+	padding-right: 20px;
+}
+
+#logout_form input{
+	margin-top: 14px;
+	padding-left:10px;
+	background-color: transparent;
+	border:none;
+}
+
+/*----- post check in div ------*/
+#check_in_success{
+	width: 60%;
+	padding:20px;
+	padding-bottom: 30px;
+	margin:20px auto;
+	background-color: ghostwhite;
+	border:solid 1px black;
+	border-radius: 4px;
+	display: none;
+}
+
+#check_in_success h1{
+	margin-bottom:20px;
+}
+
+#check_in_success .info{
+	width: 80%;
+	margin: 10px auto;
+	border:solid 1px black;
+	background-color: ghostwhite;
+	text-align: left;
+	padding:10px;
+	border-radius: 4px;
+	text-shadow: none;
+}
+
+.info span{
+	margin-left: 10px;
+	width:80%;
+	text-align: left;
+	float:right;
+	padding-left:30px;
+	border-left: solid 1px black;
+}
+
+/*-------- media query customization ------------*/
+@media only screen and (max-width: 800px) {
+    
+#content form, #link_form{
+    width:100%;
+}
+
+#content h1{
+    color: white;
+    display: none;
+}
+
+#center_container{
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#link_form .input-container{
+	width: 90%;
+}
+
+#link_form .h2{
+	background-color: #ccc;
+	padding:10px;
+}
+
+#link_form .input-container input{
+	width: 100%;
+}
+
+#logout_form input{
+	margin-left:5px;
+	color:#777777;
+}
+
+.inputbox input{
+	width:10%;
+}
+
+.inputbox span{
+	margin-left: 5px;
+}
+
+#check_in_success{
+	width: 100%;
+}
+
+#check_in_success .info{
+	width: 100%;
+	overflow: hidden;
+}
+
+#check_in_success h1{
+	display: block;
+	color: #474747;
+}
+
+.info span{
+	margin-left: 10px;
+	width:70%;
+	text-align: left;
+	float:right;
+	padding-left:30px;
+	border-left: solid 1px black;
+}
+
+}
+
